@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+
+    <title>Title of the document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+
+<body>
+    <div id="app">
+        <input type="text" v-model="name">
+        <p>hello {{ name }}</p>
+    </div>  
+
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data() {
+                return {
+                    name: 'John'
+                };
+            }
+        });
+    </script>
+
+</body>
+
+</html>
